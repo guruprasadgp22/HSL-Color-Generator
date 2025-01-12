@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSL Color Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HSL Color Generator</h1>
+        <div class="color-display">
+
+        </div>
+        <div class="controls">
+            <div class="control">
+                <label for="hue">Hue:</label>
+                <div class="slider-continer">
+                    <input type="range" id="hue" min="0" max="360" value="20">
+                    <span id="hueValue">20</span>
+                </div>
+            </div>
+
+            <div class="control">
+                <label for="saturation">Saturation:</label>
+                <div class="slider-continer">
+                    <input type="range" id="saturation" min="0" max="100" value="34">
+                    <span id="saturationValue">34</span>%
+                </div>
+            </div>
+
+            <div class="control">
+                <label for="lightness">Lightness:</label>
+                <div class="slider-continer">
+                    <input type="range" id="lightness" min="0" max="100" value="45">
+                    <span id="lightnessValue">45</span>%
+                </div>
+            </div>
+
+        </div>
+
+        <button id="copyButton">Copy Color</button>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
